@@ -53,7 +53,7 @@ public class StudentsListAdapter extends RealmRecyclerViewAdapter<Students_List,
         if (value==null){
 
         }else {
-            if (value.equals("Present")) {
+            if ("Present".equals(value)) {
                 holder.radioButton_present.setChecked(true);
             } else {
                 holder.radioButton_absent.setChecked(true);

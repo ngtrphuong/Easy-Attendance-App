@@ -43,7 +43,7 @@ public class Reports_Detail_Adapter extends RealmRecyclerViewAdapter<Attendance_
         Attendance_Students_List temp = getItem(position);
         holder.namE.setText(temp.getStudentName());
         holder.regNo.setText(temp.getStudentRegNo());
-        if (temp.getAttendance().equals("Present")){
+        if ("Present".equals(temp.getAttendance())){
             holder.status.setText("P");
             holder.circle.setCardBackgroundColor(mActivity.getResources().getColor(R.color.green_new));
         }else{
